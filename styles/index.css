@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    width: 100%;
+    height: 70px;
+  }
+  .cabecalho .cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .cabecalho .cabecalho-menu .menu-itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+  }
+  .cabecalho .cabecalho-menu .menu-itens .item:hover {
+    cursor: pointer;
+    color: #d88340;
+  }
+  .cabecalho .cabecalho-menu .pesquisar {
+    display: flex;
+    gap: 10px;
+  }
+  .cabecalho .cabecalho-menu .pesquisar input {
+    width: 300px;
+    border-radius: 10px;
+  }
+  .cabecalho .cabecalho-menu .pesquisar input:hover {
+    cursor: pointer;
+  }
+  .cabecalho .cabecalho-menu .pesquisar img {
+    width: 33px;
+  }
+}
+.apresentacao {
+  width: 100%;
+  height: 800px;
+  background-image: url(/src/img/burguer-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.apresentacao .text-apresentacao {
+  position: absolute;
+  width: 60%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 3px 5px 5px black;
+}
+.apresentacao .text-apresentacao h2 {
+  font-size: 150%;
+}
+.apresentacao .text-apresentacao h1 {
+  font-size: 500%;
+}
+.apresentacao .text-apresentacao p {
+  font-size: 150%;
+}
+.apresentacao .text-apresentacao a {
+  background-color: #d88340;
+  color: #0b161a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-shadow: none;
+}
+.apresentacao .text-apresentacao a:hover {
+  background-color: #0b161a;
+  color: #d88340;
+}
+
+.sobre-nos {
+  width: 100%;
+  height: 800px;
+  overflow-y: hidden;
+}
+.sobre-nos .title-sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.sobre-nos .sobre-nos-itens {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+.sobre-nos .sobre-nos-itens .sobrenos-item {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 25%;
+  height: 500px;
+  overflow-y: hidden;
+}
+.sobre-nos .sobre-nos-itens .sobrenos-item span {
+  color: #d88340;
+}
+.sobre-nos .sobre-nos-itens .sobrenos-item a {
+  background-color: #d88340;
+  color: #0b161a;
+  border-radius: 20px;
+}
+.sobre-nos .sobre-nos-itens .sobrenos-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardapio {
+  width: 100%;
+  height: 800px;
+  overflow-y: hidden;
+}
+.cardapio .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250%;
+  padding-bottom: 30px;
+}
+.cardapio .escolher {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 20px;
+  padding-top: 30px;
+}
+.cardapio .escolher .escolher-item {
+  background-color: #d88340;
+  padding: 8px;
+  border-radius: 10px;
+  color: #0b161a;
+}
+.cardapio .escolher .escolher-item:hover {
+  cursor: pointer;
+  color: #d88340;
+  background-color: #0b161a;
+}
+.cardapio .itens-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+.cardapio .itens-cardapio .item-cardapio {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+  height: 400px;
+}
+.cardapio .itens-cardapio .item-cardapio img {
+  width: 60%;
+  margin-left: 20%;
+}
+.cardapio .itens-cardapio .item-cardapio .txt-itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  text-align: justify;
+  gap: 20px;
+}
+.cardapio .itens-cardapio .item-cardapio .txt-itens h1 {
+  background-color: #d88340;
+  color: #0b161a;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+}
+
+.rodape {
+  width: 100%;
+  height: 200px;
+  background-color: #d88340;
+  display: flex;
+  justify-content: center;
+}
+.rodape .rodape-section1 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.rodape .rodape-section1 img {
+  width: 200px;
+}
+.rodape .rodape-section2 {
+  width: 33%;
+  color: #0b161a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.rodape .rodape-section3 {
+  width: 33%;
+  color: #0b161a;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b161a;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
