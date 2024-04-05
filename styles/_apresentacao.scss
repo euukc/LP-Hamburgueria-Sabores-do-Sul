@@ -1,10 +1,10 @@
 
-
+@media screen and (min-width: 1024px){
 
 .apresentacao{
 width: 100%;
 height: 800px;
-background-image: url(/src/img/burguer-1.jpg);
+background-image: url(/LP-Hamburgueria-Sabores-do-Sul/src/img/burguer-1.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -51,4 +51,56 @@ position: relative;
                   
     }
 
+}
+}
+
+@media screen and (max-width: 767px){
+
+
+    .apresentacao{
+        width: 100%;
+        height: 500px;
+        background-image: url(/LP-Hamburgueria-Sabores-do-Sul/src/img/burguer-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .text-apresentacao {
+            position: absolute;
+            width: 60%;
+            height: 500px;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            text-shadow: 1px 3px 3px black;
+
+            h2 {
+                font-size: 100%;
+            }
+            h1 {
+                font-size: 200%;
+                
+            }
+            p {
+                font-size: 100%;
+                
+            }
+            a {
+                background-color: $cor-secundaria;
+                color: $cor-primaria;
+                padding: 5px;
+                border-radius: 10px;
+                margin-top: 20px;
+                text-shadow: none;
+                
+                &:hover{
+                    background-color: $cor-primaria;
+                    color: $cor-secundaria;
+                }
+            }                  
+                      
+        }
+    }
 }

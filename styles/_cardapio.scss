@@ -1,4 +1,4 @@
-
+@media screen and (min-width: 1024px){
 .cardapio{
     width: 100%;
     height: 800px;
@@ -77,4 +77,98 @@
             
         }
     }
+}
+
+}
+
+@media screen and (max-width: 767px){
+
+    .cardapio{
+        width: 100%;
+        height: 900px;
+        overflow-y: hidden;
+        padding: 20px 0 20px 0;
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+            padding-bottom: 30px;            
+        }
+
+        .escolher {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            gap: 20px;
+            padding-top: 30px;
+            
+            .escolher-item{
+                background-color: $cor-secundaria;
+                padding: 6px;
+                border-radius: 10px;
+                color: $cor-primaria;
+                &:hover{
+                    cursor: pointer;
+                    color: $cor-secundaria;
+                    background-color: $cor-primaria;
+                }
+            }        
+    
+        }
+        .itens-cardapio{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 70px;
+            width: 100%;
+            height: 100%;                       
+            position: relative;
+            overflow: hidden;   
+            
+            .item-cardapio{
+                border: 2px solid white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;  
+                position: absolute;
+                top: 0;
+                left: 0;                
+                transition: transform 0.5s ease;
+                
+                &::nth-child(2) {
+                    z-index: -1;}                   
+                
+                
+                img {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+    
+                .txt-itens{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 20px 0 20px;
+                    text-align: justify;
+                    gap: 10px;
+    
+                    h1 {
+                        background-color: $cor-secundaria;
+                        color: $cor-primaria;
+                        border-radius: 10px;
+                        padding: 0 20px 0 20px;
+                        
+                    }
+                    
+                }           
+                
+                
+            }
+        }
+
+}
 }

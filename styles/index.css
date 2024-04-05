@@ -6,8 +6,9 @@
   }
   .cabecalho .cabecalho-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 80px;
     width: 100%;
     height: 100%;
     overflow-y: hidden;
@@ -23,171 +24,340 @@
     cursor: pointer;
     color: #d88340;
   }
-  .cabecalho .cabecalho-menu .pesquisar {
+}
+@media screen and (max-width: 767px) {
+  .cabecalho {
+    width: 100%;
+    height: 70px;
+  }
+  .cabecalho .cabecalho-menu {
     display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .cabecalho .cabecalho-menu img {
+    width: 70px;
+  }
+  .cabecalho .menu-itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .apresentacao {
+    width: 100%;
+    height: 800px;
+    background-image: url(/LP-Hamburgueria-Sabores-do-Sul/src/img/burguer-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .apresentacao .text-apresentacao {
+    position: absolute;
+    width: 60%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 3px 5px 5px black;
+  }
+  .apresentacao .text-apresentacao h2 {
+    font-size: 150%;
+  }
+  .apresentacao .text-apresentacao h1 {
+    font-size: 500%;
+  }
+  .apresentacao .text-apresentacao p {
+    font-size: 150%;
+  }
+  .apresentacao .text-apresentacao a {
+    background-color: #d88340;
+    color: #0b161a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-shadow: none;
+  }
+  .apresentacao .text-apresentacao a:hover {
+    background-color: #0b161a;
+    color: #d88340;
+  }
+}
+@media screen and (max-width: 767px) {
+  .apresentacao {
+    width: 100%;
+    height: 500px;
+    background-image: url(/LP-Hamburgueria-Sabores-do-Sul/src/img/burguer-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .apresentacao .text-apresentacao {
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 1px 3px 3px black;
+  }
+  .apresentacao .text-apresentacao h2 {
+    font-size: 100%;
+  }
+  .apresentacao .text-apresentacao h1 {
+    font-size: 200%;
+  }
+  .apresentacao .text-apresentacao p {
+    font-size: 100%;
+  }
+  .apresentacao .text-apresentacao a {
+    background-color: #d88340;
+    color: #0b161a;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-shadow: none;
+  }
+  .apresentacao .text-apresentacao a:hover {
+    background-color: #0b161a;
+    color: #d88340;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sobre-nos {
+    width: 100%;
+    height: 800px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .title-sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .sobre-nos .sobre-nos-itens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 25%;
+    height: 500px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item span {
+    color: #d88340;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item a {
+    background-color: #d88340;
+    color: #0b161a;
+    border-radius: 20px;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sobre-nos {
+    width: 100%;
+    height: 1190px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .title-sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    padding: 20px 0 20px 0;
+  }
+  .sobre-nos .sobre-nos-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: 1100px;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 70%;
+    height: 500px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item span {
+    color: #d88340;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item a {
+    background-color: #d88340;
+    color: #0b161a;
+    border-radius: 20px;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cardapio {
+    width: 100%;
+    height: 800px;
+    overflow-y: hidden;
+  }
+  .cardapio .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    padding-bottom: 30px;
+  }
+  .cardapio .escolher {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .cardapio .escolher .escolher-item {
+    background-color: #d88340;
+    padding: 8px;
+    border-radius: 10px;
+    color: #0b161a;
+  }
+  .cardapio .escolher .escolher-item:hover {
+    cursor: pointer;
+    color: #d88340;
+    background-color: #0b161a;
+  }
+  .cardapio .itens-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  .cardapio .itens-cardapio .item-cardapio {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 20%;
+    height: 400px;
+  }
+  .cardapio .itens-cardapio .item-cardapio img {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    text-align: justify;
+    gap: 20px;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens h1 {
+    background-color: #d88340;
+    color: #0b161a;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cardapio {
+    width: 100%;
+    height: 900px;
+    overflow-y: hidden;
+    padding: 20px 0 20px 0;
+  }
+  .cardapio .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    padding-bottom: 30px;
+  }
+  .cardapio .escolher {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .cardapio .escolher .escolher-item {
+    background-color: #d88340;
+    padding: 6px;
+    border-radius: 10px;
+    color: #0b161a;
+  }
+  .cardapio .escolher .escolher-item:hover {
+    cursor: pointer;
+    color: #d88340;
+    background-color: #0b161a;
+  }
+  .cardapio .itens-cardapio {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .cardapio .itens-cardapio .item-cardapio {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+  }
+  .cardapio .itens-cardapio .item-cardapio::nth-child(2) {
+    z-index: -1;
+  }
+  .cardapio .itens-cardapio .item-cardapio img {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    text-align: justify;
     gap: 10px;
   }
-  .cabecalho .cabecalho-menu .pesquisar input {
-    width: 300px;
+  .cardapio .itens-cardapio .item-cardapio .txt-itens h1 {
+    background-color: #d88340;
+    color: #0b161a;
     border-radius: 10px;
-  }
-  .cabecalho .cabecalho-menu .pesquisar input:hover {
-    cursor: pointer;
-  }
-  .cabecalho .cabecalho-menu .pesquisar img {
-    width: 33px;
+    padding: 0 20px 0 20px;
   }
 }
-.apresentacao {
-  width: 100%;
-  height: 800px;
-  background-image: url(/src/img/burguer-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.apresentacao .text-apresentacao {
-  position: absolute;
-  width: 60%;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-shadow: 3px 5px 5px black;
-}
-.apresentacao .text-apresentacao h2 {
-  font-size: 150%;
-}
-.apresentacao .text-apresentacao h1 {
-  font-size: 500%;
-}
-.apresentacao .text-apresentacao p {
-  font-size: 150%;
-}
-.apresentacao .text-apresentacao a {
-  background-color: #d88340;
-  color: #0b161a;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 20px;
-  text-shadow: none;
-}
-.apresentacao .text-apresentacao a:hover {
-  background-color: #0b161a;
-  color: #d88340;
-}
-
-.sobre-nos {
-  width: 100%;
-  height: 800px;
-  overflow-y: hidden;
-}
-.sobre-nos .title-sobre-nos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 250%;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-.sobre-nos .sobre-nos-itens {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  align-items: center;
-  width: 100%;
-  height: 70%;
-}
-.sobre-nos .sobre-nos-itens .sobrenos-item {
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 25%;
-  height: 500px;
-  overflow-y: hidden;
-}
-.sobre-nos .sobre-nos-itens .sobrenos-item span {
-  color: #d88340;
-}
-.sobre-nos .sobre-nos-itens .sobrenos-item a {
-  background-color: #d88340;
-  color: #0b161a;
-  border-radius: 20px;
-}
-.sobre-nos .sobre-nos-itens .sobrenos-item img {
-  width: 100%;
-  height: 100%;
-}
-
-.cardapio {
-  width: 100%;
-  height: 800px;
-  overflow-y: hidden;
-}
-.cardapio .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 250%;
-  padding-bottom: 30px;
-}
-.cardapio .escolher {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  gap: 20px;
-  padding-top: 30px;
-}
-.cardapio .escolher .escolher-item {
-  background-color: #d88340;
-  padding: 8px;
-  border-radius: 10px;
-  color: #0b161a;
-}
-.cardapio .escolher .escolher-item:hover {
-  cursor: pointer;
-  color: #d88340;
-  background-color: #0b161a;
-}
-.cardapio .itens-cardapio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 70px;
-  width: 100%;
-  height: 100%;
-}
-.cardapio .itens-cardapio .item-cardapio {
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 20%;
-  height: 400px;
-}
-.cardapio .itens-cardapio .item-cardapio img {
-  width: 60%;
-  margin-left: 20%;
-}
-.cardapio .itens-cardapio .item-cardapio .txt-itens {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px 0 20px;
-  text-align: justify;
-  gap: 20px;
-}
-.cardapio .itens-cardapio .item-cardapio .txt-itens h1 {
-  background-color: #d88340;
-  color: #0b161a;
-  border-radius: 10px;
-  padding: 0 20px 0 20px;
-}
-
 .rodape {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: #d88340;
   display: flex;
   justify-content: center;
