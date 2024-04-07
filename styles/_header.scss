@@ -48,11 +48,7 @@
         .cabecalho-menu {
             display: flex;
             justify-content: center;
-            height: 100%;
-
-            img {
-                width: 70px;
-            }
+            height: 100%;            
     }
 
     .menu-itens {
@@ -60,6 +56,9 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        font-size: 12px;
+        width: 100%;
+        position: relative;
     } 
 
 
