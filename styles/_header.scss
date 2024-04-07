@@ -1,46 +1,46 @@
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
 
 
-@mixin flexCenter(){
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;  
-}
-
-.cabecalho {
-    width: 100%;
-    height: 70px;
-    
-
-    .cabecalho-menu {
+    @mixin flexCenter() {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 80px;        
+    }
+
+    .cabecalho {
         width: 100%;
-        height: 100%;
-        overflow-y: hidden;
-        
+        height: 70px;
 
-        .menu-itens {
-            @include flexCenter();
-            list-style-type: none;
-            gap: 40px;
-            
-            .item:hover {
-                cursor: pointer;
-                color: $cor-secundaria;
-            }            
-        }       
-        
-    }   
-    
+
+        .cabecalho-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+
+
+            .menu-itens {
+                @include flexCenter();
+                list-style-type: none;
+                gap: 40px;
+
+                .item:hover {
+                    cursor: pointer;
+                    color: $cor-secundaria;
+                }
+            }
+
+        }
+
+    }
+
 }
 
-}
 
-
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .cabecalho {
         width: 100%;
         height: 70px;
@@ -48,18 +48,19 @@
         .cabecalho-menu {
             display: flex;
             justify-content: center;
-            height: 100%;            
+            height: 100%;
+        }
+
+        .menu-itens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 12px;
+            width: 100%;
+            position: relative;
+        }
+
+
     }
-
-    .menu-itens {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        font-size: 12px;
-        width: 100%;
-        position: relative;
-    } 
-
-
-}}
+}
