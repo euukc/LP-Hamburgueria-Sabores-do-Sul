@@ -8,7 +8,7 @@
  - CSS
  - Javascript
  - Tailwind
- - SASS
+ - SCSS
 
 
  ## 🛠️ O que ainda deverá ser feito 
