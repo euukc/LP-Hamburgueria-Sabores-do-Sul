@@ -40,6 +40,30 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.cabecalho {
+    width: 100%;
+    height: 70px;
+
+    .cabecalho-menu {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .menu-itens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        width: 100%;
+        position: relative;
+    }
+}
+}
+
+
 
 @media screen and (max-width: 767px) {
     .cabecalho {

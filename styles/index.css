@@ -26,6 +26,26 @@
     color: #d88340;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho {
+    width: 100%;
+    height: 70px;
+  }
+  .cabecalho .cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .cabecalho .menu-itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+  }
+}
 @media screen and (max-width: 767px) {
   .cabecalho {
     width: 100%;
@@ -89,6 +109,48 @@
     cursor: pointer;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .apresentacao {
+    width: 100%;
+    height: 500px;
+    background-image: url(/src/img/burguer-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .apresentacao .text-apresentacao {
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 1px 3px 3px black;
+  }
+  .apresentacao .text-apresentacao h2 {
+    font-size: 150%;
+  }
+  .apresentacao .text-apresentacao h1 {
+    font-size: 300%;
+  }
+  .apresentacao .text-apresentacao p {
+    font-size: 150%;
+  }
+  .apresentacao .text-apresentacao #botao-cardapio {
+    background-color: #d88340;
+    color: #0b161a;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-shadow: none;
+  }
+  .apresentacao .text-apresentacao #botao-cardapio:hover {
+    background-color: #0b161a;
+    color: #d88340;
+  }
+}
 @media screen and (max-width: 767px) {
   .apresentacao {
     width: 100%;
@@ -118,7 +180,7 @@
   .apresentacao .text-apresentacao p {
     font-size: 100%;
   }
-  .apresentacao .text-apresentacao a {
+  .apresentacao .text-apresentacao #botao-cardapio {
     background-color: #d88340;
     color: #0b161a;
     padding: 5px;
@@ -126,7 +188,7 @@
     margin-top: 20px;
     text-shadow: none;
   }
-  .apresentacao .text-apresentacao a:hover {
+  .apresentacao .text-apresentacao #botao-cardapio:hover {
     background-color: #0b161a;
     color: #d88340;
   }
@@ -157,6 +219,48 @@
     border: 2px solid white;
     border-radius: 10px;
     width: 25%;
+    height: 500px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item span {
+    color: #d88340;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item a {
+    background-color: #d88340;
+    color: #0b161a;
+    border-radius: 20px;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sobre-nos {
+    width: 100%;
+    height: 1300px;
+    overflow-y: hidden;
+  }
+  .sobre-nos .title-sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    padding: 20px 0 20px 0;
+  }
+  .sobre-nos .sobre-nos-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+  }
+  .sobre-nos .sobre-nos-itens .sobrenos-item {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 70%;
     height: 500px;
     overflow-y: hidden;
   }
@@ -281,6 +385,84 @@
     padding: 0 20px 0 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cardapio {
+    width: 100%;
+    height: 700px;
+    overflow-y: hidden;
+    padding: 20px 0 20px 0;
+  }
+  .cardapio .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .cardapio .menu h1 {
+    font-size: 24px;
+  }
+  .cardapio .escolher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .cardapio .escolher .escolher-item {
+    background-color: #d88340;
+    padding: 6px;
+    border-radius: 10px;
+    color: #0b161a;
+  }
+  .cardapio .escolher .escolher-item:hover {
+    cursor: pointer;
+    color: #d88340;
+    background-color: #0b161a;
+  }
+  .cardapio .itens-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+    width: 100%;
+    height: 500px;
+  }
+  .cardapio .itens-cardapio .item-cardapio {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 35%;
+    height: 200px;
+  }
+  .cardapio .itens-cardapio .item-cardapio img {
+    width: 10rem;
+    height: 15rem;
+    margin-left: 28%;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    text-align: justify;
+    gap: 15px;
+    height: 100%;
+    font-size: 15px;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens h1 {
+    background-color: #d88340;
+    color: #0b161a;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+  }
+  .cardapio .itens-cardapio .item-cardapio .txt-itens p {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .cardapio {
     width: 100%;
@@ -331,8 +513,9 @@
     height: 200px;
   }
   .cardapio .itens-cardapio .item-cardapio img {
-    width: 60%;
-    margin-left: 20%;
+    width: 8rem;
+    height: 10rem;
+    margin-left: 7%;
   }
   .cardapio .itens-cardapio .item-cardapio .txt-itens {
     display: flex;
@@ -367,6 +550,35 @@
   }
   .rodape .rodape-section1 img {
     width: 200px;
+  }
+  .rodape .rodape-section2 {
+    width: 33%;
+    color: #0b161a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rodape .rodape-section3 {
+    width: 33%;
+    color: #0b161a;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .rodape {
+    width: 100%;
+    height: 150px;
+    background-color: #d88340;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .rodape .rodape-section1 {
+    display: none;
   }
   .rodape .rodape-section2 {
     width: 33%;
