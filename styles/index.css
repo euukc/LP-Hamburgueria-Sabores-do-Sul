@@ -18,6 +18,7 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    font-size: 20px;
     gap: 40px;
   }
   .cabecalho .cabecalho-menu .menu-itens .item:hover {
@@ -49,7 +50,7 @@
   .apresentacao {
     width: 100%;
     height: 800px;
-    background-image: url(./src/img/burguer-1.jpg);
+    background-image: url(/src/img/burguer-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +75,7 @@
   .apresentacao .text-apresentacao p {
     font-size: 150%;
   }
-  .apresentacao .text-apresentacao a {
+  .apresentacao .text-apresentacao #botao-cardapio {
     background-color: #d88340;
     color: #0b161a;
     padding: 10px;
@@ -82,16 +83,17 @@
     margin-top: 20px;
     text-shadow: none;
   }
-  .apresentacao .text-apresentacao a:hover {
+  .apresentacao .text-apresentacao #botao-cardapio:hover {
     background-color: #0b161a;
     color: #d88340;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 767px) {
   .apresentacao {
     width: 100%;
     height: 500px;
-    background-image: url(./src/img/burguer-1.jpg);
+    background-image: url(/src/img/burguer-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +134,7 @@
 @media screen and (min-width: 1024px) {
   .sobre-nos {
     width: 100%;
-    height: 800px;
+    height: 715px;
     overflow-y: hidden;
   }
   .sobre-nos .title-sobre-nos {
@@ -141,7 +143,7 @@
     align-items: center;
     font-size: 250%;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .sobre-nos .sobre-nos-itens {
     display: flex;
@@ -231,7 +233,7 @@
     justify-content: center;
     list-style-type: none;
     gap: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .cardapio .escolher .escolher-item {
     background-color: #d88340;
@@ -249,7 +251,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-top: 70px;
+    padding-top: 60px;
     width: 100%;
     height: 100%;
   }
@@ -424,4 +426,20 @@
 body {
   background-color: #0b161a;
   color: white;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+#scrollToTopBtn.visible {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

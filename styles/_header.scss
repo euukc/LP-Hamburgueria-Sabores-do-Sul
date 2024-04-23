@@ -25,6 +25,7 @@
             .menu-itens {
                 @include flexCenter();
                 list-style-type: none;
+                font-size: 20px;
                 gap: 40px;
 
                 .item:hover {

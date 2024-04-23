@@ -17,27 +17,31 @@
                 <img src="src/img/logo.png" alt="Logo da Hamburgueria Sabores do Sul">
             </div>
             <menu class="menu-itens">
-                <li class="item">HOME</li>
-                <li class="item">SOBRE NÓS</li>
-                <li class="item">CARDÁPIO</li>
-                <li class="item">CONTATO</li>
+                <li class="item" data-target="item1">HOME</li>
+                <li class="item" data-target="item2">SOBRE NÓS</li>
+                <li class="item" data-target="item3">CARDÁPIO</li>
+                <li class="item" data-target="item4">CONTATO</li>
             </menu>
 
         </nav>
     </header>
     <main>
-        <section class="apresentacao">
+        <div id="scrollToTopBtn">
+            <img class="w-40" src="/src/img/Faça seu pedido.png" alt="Seta para cima">
+          </div>
+
+        <section class="apresentacao" id="item1">
             <div class="text-apresentacao">
                 <h2> Bem-vindos à Hamburgueria</h1>
                     <h1>SABORES DO SUL</h1>
                     <p>Hamburgueres e Combos Artesanais
                     </p>
-                    <a class="pt-4 text-2xl" href="">Veja o cardápio</a>
+                    <p class="pt-4 text-2xl" href="" id="botao-cardapio">Veja o cardápio</p>
             </div>
 
         </section>
 
-        <section class="sobre-nos">
+        <section class="sobre-nos" id="item2">
             <div class="title-sobre-nos">
                 <h1>SOBRE NÓS</h1>
             </div>
@@ -53,8 +57,6 @@
                             hambúrguer conta uma história de paixão pela gastronomia. Inspirados pela riqueza da
                             culinária tradicional e impulsionados pela inovação, criamos uma experiência única para os
                             amantes de hambúrgueres em Pelotas/RS. </h1>
-
-                        <a href="">Leia mais!</a>
                     </div>
                 </div>
                 <div class="sobrenos-item">
@@ -64,7 +66,7 @@
             </div>
         </section>
 
-        <section class="cardapio">
+        <section class="cardapio" id="item3">
             <div class="menu">
                 <h1> CARDÁPIO</h1>
             </div>
@@ -117,7 +119,7 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape" id="item4">
         <div class="rodape-section1">
             <img src="src/img/logo.png" alt="">
 
@@ -135,6 +137,7 @@
 
 
     </footer>
+    <script src="/src/script/script.js"></script>
 
 </body>
 

@@ -20,3 +20,20 @@ body {
     background-color: $cor-primaria;
     color: white;
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+
+}
+
+#scrollToTopBtn.visible {
+    opacity: 1;
+}
