@@ -12,21 +12,23 @@
 
         .text-apresentacao {
             position: absolute;
-            width: 70%;
+            width: 60%;
             height: 800px;
             display: flex;            
             justify-content: center;
             align-items: center;
+            text-align: center;            
             flex-direction: column;
             text-shadow: 3px 5px 5px black;
+            gap: 10px;
 
 
             h2 {
-                font-size: 150%;
+                font-size: 330%;
             }
 
             h1 {
-                font-size: 500%;
+                font-size: 180%;
 
             }
 
